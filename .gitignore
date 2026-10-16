@@ -1,0 +1,49 @@
+# ---- Vivado ----------------------------------------------------------------
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+.Xil/
+vivado.jou
+vivado.log
+vivado_*.zip
+# Vivado project trees (regenerate from fpga/rtl + fpga/xdc -- see README)
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.xpr
+*.bit
+*.bin
+*.ltx
+*.mmi
+*.rpt
+
+# ---- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- Generated output ------------------------------------------------------
+# Everything in data/ is produced by host/ scripts. Nothing here is source.
+data/
+
+# Figures used by the README are checked in deliberately.
+!docs/img/
+
+# ---- Large source images ---------------------------------------------------
+# image.bmp is bundled as a small runnable sample. The multi-megapixel photos
+# used for the figures are not committed -- any image works, see README.
+# Listed explicitly rather than as *.jpg, so README figures in docs/img/ stay in.
+/road.jpg
+/road_loop.jpg
+
+
+# ---- OS --------------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
